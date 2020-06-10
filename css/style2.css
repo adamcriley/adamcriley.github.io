@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #D1D2CD;
+  background: #0E1B27;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(	7,	14,	10, 0.85);
+}
+
+.headline {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  background: url("1_JETXASzxtuu3a8i1CCWfsw.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.headline:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(	34, 66, 95, 0.45);
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+          animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 {
+  margin: 0;
+  font-size: 5em;
+  line-height: 1.2em;
+  color: #D1D2CD;
+}
+
+.inner p {
+  margin: 0;
+  font-size: 1.4em;
+
+  color: #D1D2CD;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav.scrolled {
+  background: rgba(	7,	14,	10, 0.85);
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  font-size: .9em;
+  color: #D1D2CD;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+
+nav a:scrolled {
+  font-size: 0.9em;
+  color: rgba(255,96,0,1);
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+
+nav p {
+  font-size: 0.9em;
+  color: #D1D2CD;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+
+nav a:hover {
+  color: rgba(255,96,0,1);
+}
+
+section {
+  width: 100%;
+  margin: 25px auto;
+  max-width: 800px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+
+section h2 {
+  color: #D1D2CD;
+  text-align: left;
+}
+
+section h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -82px; 
+  height: 85px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+section h3 {
+  text-align: left;
+  color: #D1D2CD;
+  transition:color .5s;
+}
+
+section p2 {
+  float: right;
+  color: #D1D2CD;
+  text-decoration: none;
+  transition:text-decoration 1s;
+}
+
+section p3 {
+  float: right;
+  opacity:0%;
+  color: rgba(255,96,0,1);
+  transition:opacity 0.5s;
+}
+
+section p4 {
+  float: right;
+  opacity:0%;
+  color: rgba(255,96,0,1);
+  transition:opacity 0.5s;
+}
+
+section p5 {
+  float: right;
+  opacity:0%;
+  color: rgba(255,96,0,1);
+  transition:opacity 0.5s;
+}
+
+section:hover h3 {
+  color: rgba(255,96,0,1);
+  transition:color .5s;
+}
+
+section:hover p3 {
+  opacity:100%;
+  transition:opacity 0.5s;
+}
+
+section p2:hover p4 {
+  opacity:80%;
+  transition:opacity .5s;
+}
+
+section p2:hover p5 {
+  opacity:60%;
+  transition:opacity 1s;
+}
+
+section p2:hover {
+  text-decoration: underline;
+  transition:text-decoration 1s;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  grid-gap: 1em;
+  width: 100%;
+  margin: 25px auto;
+  max-width: 300px;
+}
+
+.leftpic {
+  padding: 0 10px 0 0;
+  text-align: left;
+  height: 216px;
+  width: 216px;
+  float: left;
+}
+
+.location-listing {
+  position: relative;
+  overflow: hidden;
+}
+
+.location-image {
+  text-align: left;
+  margin: 20px;
+  height: 216px;
+  width: 216px;
+  line-height: 0;
+}
+
+.location-title {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  height: 216px;
+  width: 216px;
+  background: rgba(17, 17, 17, 0.4);
+  z-index: 1;
+   
+  /* typographic styles */
+  color: #D1D2CD;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+   
+  /* position the text */
+
+  align-items: top;
+  justify-content: left;
+  padding: 25px;
+
+  /* hide the title by default */
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+}
+ 
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+  transform: scale(1.01);
+}
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
