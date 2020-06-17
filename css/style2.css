@@ -19,7 +19,7 @@ header {
   position: relative;
   height: 100vh;
   text-align: center;
-  background: url("1_JETXASzxtuu3a8i1CCWfsw.jpeg") no-repeat center center;
+  background: url("books.webp") no-repeat center center;
   background-size: cover;
 }
 .headline:after {
@@ -85,7 +85,7 @@ nav a {
 
 nav a:scrolled {
   font-size: 0.9em;
-  color: rgba(255,96,0,1);
+  color: #27ffff;
   text-decoration: none;
   margin: 5px 0 0 20px;
   display: block;
@@ -100,7 +100,7 @@ nav p {
 }
 
 nav a:hover {
-  color: rgba(255,96,0,1);
+  color: #27ffff;
 }
 
 section {
@@ -142,26 +142,26 @@ section p2 {
 section p3 {
   float: right;
   opacity:0%;
-  color: rgba(255,96,0,1);
+  color: #27ffff;
   transition:opacity 0.5s;
 }
 
 section p4 {
   float: right;
   opacity:0%;
-  color: rgba(255,96,0,1);
+  color: #27ffff;
   transition:opacity 0.5s;
 }
 
 section p5 {
   float: right;
   opacity:0%;
-  color: rgba(255,96,0,1);
+  color: #27ffff;
   transition:opacity 0.5s;
 }
 
 section:hover h3 {
-  color: rgba(255,96,0,1);
+  color: #27ffff;
   transition:color .5s;
 }
 
@@ -200,6 +200,14 @@ section p2:hover {
   height: 216px;
   width: 216px;
   float: left;
+  background-image: url("me_blue.webp");
+  background-repeat: no-repeat;
+  transition: background-image .5s;
+}
+
+.leftpic:hover {
+  background-image: url("me.webp");
+  transition: background-image .5s;
 }
 
 .location-listing {
