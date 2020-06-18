@@ -10,10 +10,10 @@ async function supportsWebp() {
 
 (async () => {
     if(await supportsWebp()) {
+        element.classList.add("leftpic");
         console.log('look at you, with your big fancy up to date browser');
     }
     else {
-        element.classList.remove("leftpic");
         console.log('browser does no support new things. Now you can no see my beautiful face. :-(');
     }
 })();
