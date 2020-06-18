@@ -181,14 +181,14 @@ section p2:hover p5 {
 }
 
 .leftpic {
-  padding: 23px 25px 0 1px;
+  padding: 23px 15px 0 1px;
   text-align: left;
   height: 216px;
   width: 216px;
   float: left;
   background-image: url("me_cyan.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   transition: background-image .2s;
 }
 
