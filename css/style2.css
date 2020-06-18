@@ -181,7 +181,8 @@ section p2:hover p5 {
 }
 
 .leftpic {
-  padding: 23px 15px 0 1px;
+  margin: 10px 15px 0 1px;
+  border: 1px solid #D1D2CD;
   text-align: left;
   height: 216px;
   width: 216px;
@@ -190,11 +191,18 @@ section p2:hover p5 {
   background-repeat: no-repeat;
   background-position: left;
   transition: background-image .2s;
+  border-radius: 20px;
 }
 
 .leftpic:hover {
   background-image: url("me.webp");
   transition: background-image .2s;
+  transition: box-shadow .2s;
+  border: 1px solid #0E1B27;
+  box-shadow:  5px 5px 5px #002b3e, 
+               -5px -5px 5px #002b3e,
+               -5px 5px 5px #002b3e,
+               5px -5px 5px #002b3e;
 }
 
 .neomorph {
@@ -207,8 +215,10 @@ section p2:hover p5 {
 
 .neomorph:hover {
   border: 1px solid #0E1B27;
-  box-shadow:  5px 5px 5px #060b10, 
-               -5px -5px 5px #002b3e;
+  box-shadow:  5px 5px 5px #002b3e, 
+               -5px -5px 5px #002b3e,
+               -5px 5px 5px #002b3e,
+               5px -5px 5px #002b3e;
   transition: box-shadow .2s;
 }
 
