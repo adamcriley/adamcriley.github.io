@@ -19,9 +19,18 @@ header {
   position: relative;
   height: 100vh;
   text-align: center;
-  background: url("books.webp") no-repeat center center;
-  background-size: cover;
+  overflow: hidden;
 }
+
+.books {
+  background: url("books.webp") no-repeat center center;
+  background-position: -25px 0;
+  background-size: 120% 120%;
+  height: 100vh;
+  -webkit-animation: slide 20s linear infinite;
+          animation: slide 20s linear infinite;
+}
+
 .headline:after {
   position: absolute;
   content: '';
@@ -190,13 +199,14 @@ section p2:hover p5 {
   background-image: url("me_cyan.webp");
   background-repeat: no-repeat;
   background-position: left;
-  transition: background-image .2s;
+  transition: background-image .1s;
+  transition: box-shadow .2s;
   border-radius: 20px;
 }
 
 .leftpic:hover {
   background-image: url("me.webp");
-  transition: background-image .2s;
+  transition: background-image .1s;
   transition: box-shadow .2s;
   border: 1px solid #0E1B27;
   box-shadow:  5px 5px 5px #002b3e, 
@@ -222,15 +232,6 @@ section p2:hover p5 {
   transition: box-shadow .2s;
 }
 
-@media (hover: none) { 
-  .location-title {
-    opacity: 1;
-  }
-  .location-image img {
-    filter: blur(2px);
-  }
-}
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -246,5 +247,29 @@ section p2:hover p5 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-position: -25px 0;
+  }
+  50% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: -25px 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: -25px 0;
+  }
+  50% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: -25px 0;
   }
 }
