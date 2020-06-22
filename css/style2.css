@@ -199,14 +199,14 @@ section p2:hover p5 {
   background-image: url("me_cyan.webp");
   background-repeat: no-repeat;
   background-position: left;
-  transition: background-image .1s;
+  transition: background-image .2s;
   transition: box-shadow .2s;
   border-radius: 20px;
 }
 
 .leftpic:hover {
   background-image: url("me.webp");
-  transition: background-image .1s;
+  transition: background-image .2s;
   transition: box-shadow .2s;
   border: 1px solid #0E1B27;
   box-shadow:  5px 5px 5px #002b3e, 
