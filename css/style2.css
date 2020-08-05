@@ -225,10 +225,10 @@ section p2:hover p5 {
 
 .neomorph:hover {
   border: 1px solid #0E1B27;
-  box-shadow:  5px 5px 5px #002b3e, 
-               -5px -5px 5px #002b3e,
-               -5px 5px 5px #002b3e,
-               5px -5px 5px #002b3e;
+  box-shadow:  5px 5px 5px #D1D2CD26, 
+               -5px -5px 5px #D1D2CD26,
+               -5px 5px 5px #D1D2CD26,
+               5px -5px 5px #D1D2CD26;
   transition: box-shadow .2s;
 }
 
