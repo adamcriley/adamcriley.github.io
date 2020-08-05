@@ -12,7 +12,7 @@ html {
 }
 
 header {
-  background: rgba(	7,	14,	10, 0.85);
+  background: rgba(7,	14,	10, 0.85);
 }
 
 .headline {
@@ -38,7 +38,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(	34, 66, 95, 0.5);
+  background: rgba(34, 66, 95, 0.5);
 }
 
 .inner {
@@ -72,7 +72,7 @@ nav {
   z-index: 10;
 }
 nav.scrolled {
-  background: rgba(	7,	14,	10, 0.9);
+  background: rgba(7,	14,	10, 0.9);
 }
 
 nav ul {
