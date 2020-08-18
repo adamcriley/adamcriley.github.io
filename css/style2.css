@@ -4,7 +4,8 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: #D1D2CD;
-  background: #0E1B27;
+  background-color: #0E1B27;
+  transition: background-color 1s ease;
 }
 
 html {
@@ -151,26 +152,26 @@ section p2 {
 section p3 {
   float: right;
   opacity:0%;
-  color: #27ffff;
+  color: var(--hcolorglow);
   transition:opacity 0.5s;
 }
 
 section p4 {
   float: right;
   opacity:0%;
-  color: #27ffff;
+  color: var(--hcolorglow);
   transition:opacity 0.5s;
 }
 
 section p5 {
   float: right;
   opacity:0%;
-  color: #27ffff;
+  color: var(--hcolorglow);
   transition:opacity 0.5s;
 }
 
 section:hover h3 {
-  color: #27ffff;
+  color: var(--hcolorglow);
   transition:color .5s;
 }
 
@@ -224,12 +225,29 @@ section p2:hover p5 {
 }
 
 .neomorph:hover {
-  border: 1px solid #0E1B27;
+  border: 1px solid #00000000;
   box-shadow:  5px 5px 5px #D1D2CD26, 
                -5px -5px 5px #D1D2CD26,
                -5px 5px 5px #D1D2CD26,
                5px -5px 5px #D1D2CD26;
   transition: box-shadow .2s;
+}
+
+.panel {
+  min-height: 50vh;
+}
+
+.color-blue1 {
+  background-color: #0E1b27;
+  --hcolorglow: #27ffff;
+}
+.color-blue2 {
+  background-color: #0e2727;
+  --hcolorglow: #27ff27;
+}
+.color-blue3 {
+  background-color: #4b4b4b;
+  --hcolorglow: #272727;
 }
 
 @-webkit-keyframes fade-in {
