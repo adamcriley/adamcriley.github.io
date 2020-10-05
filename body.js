@@ -21,3 +21,18 @@ $(window).scroll(function() {
   });    
   
 }).scroll();
+
+var angle = 0;
+
+var test = $('name');
+
+function changeAngle() {
+    angle = (angle + 5) % 360;
+    test.css({
+        'background': '-webkit-linear-gradient(' + angle + 'deg, #27ff27, #27ffff)',
+        '-webkit-background-clip': 'text',
+        '-webkit-text-fill-color': 'transparent'
+    });
+}
+
+setInterval(changeAngle, 100);

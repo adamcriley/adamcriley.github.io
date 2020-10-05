@@ -67,6 +67,16 @@ header {
   color: #D1D2CD;
 }
 
+.name {
+  background: -webkit-linear-gradient(0deg, #27ff27, #27ffff);  
+  background-size: 200% auto;
+  color: #D1D2CD;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 30s ease infinite;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -289,5 +299,29 @@ section p2:hover p5 {
   }
   100% {
     background-position: -25px 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
   }
 }
