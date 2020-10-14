@@ -27,7 +27,7 @@ var angle = 0;
 var test = $('name');
 
 function changeAngle() {
-    angle = (angle + 5) % 360;
+    angle = (angle + 15) % 360;
     test.css({
         'background': '-webkit-linear-gradient(' + angle + 'deg, #27ff27, #27ffff)',
         '-webkit-background-clip': 'text',
@@ -36,3 +36,8 @@ function changeAngle() {
 }
 
 setInterval(changeAngle, 100);
+
+$('a').hover(
+  function(){ $(this).addClass('name') },
+  function(){ $(this).removeClass('name') }
+)

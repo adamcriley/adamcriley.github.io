@@ -119,10 +119,6 @@ nav p {
   display: block;
 }
 
-nav a:hover {
-  color: #27ffff;
-}
-
 section {
   width: 100%;
   margin: 25px auto;
