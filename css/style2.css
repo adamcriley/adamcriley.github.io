@@ -8,6 +8,16 @@ body {
   transition: background-color 1s ease;
 }
 
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,7 +130,7 @@ nav p {
 }
 
 section {
-  width: 100%;
+  width: 92%;
   margin: 25px auto;
   max-width: 800px;
   font-size: 1.2em;
