@@ -126,6 +126,11 @@ nav p {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: #D1D2CD;
+}
+
 section {
   width: 92%;
   margin: 25px auto;
@@ -158,8 +163,6 @@ section h3 {
 section p2 {
   float: right;
   color: #D1D2CD;
-  text-decoration: none;
-  transition:text-decoration 1s;
 }
 
 section p3 {
