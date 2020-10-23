@@ -28,4 +28,12 @@ $(window).scroll(function() {
   }
 });
 
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.arroww').fadeOut();
+  } else {
+    $('.arroww').fadeIn();
+  }
+});
+
 console.log('scroll-y');
