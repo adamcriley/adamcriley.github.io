@@ -1,7 +1,14 @@
 var $headline = $('.headline'),
     $inner = $('.inner'),
-    $nav = $('nav'),
-    navHeight = 75;
+    $nav = $('nav');
+
+if( window.innerWidth > 767 ){
+  var navHeight = 75;
+}
+
+if( window.innerWidth <= 768 ){
+  var navHeight = 45;
+}
 
 $(window).scroll(function() {
   var scrollTop = $(this).scrollTop(),
