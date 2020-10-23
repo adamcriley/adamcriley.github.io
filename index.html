@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hi, new friend</title>
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -28,6 +29,7 @@
       <div class="inner">
         <h1>Hi, I'm <span class="name">Adam</span></h1>
         <p>I identify problems and find solutions</p>
+        <p class="arrow bounce"><br><br>&#11167;</p>
       </div>
     </div>
   </div>
@@ -43,7 +45,7 @@
 </header>
 
 <!--blue-->
-<div class="panel" data-color="blue1">
+<div class="panel" data-color="blue1" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
   <section>
     <h2 id="adam"><span style="color:#27ffff">About Me</span></h2>
       <div id="me"></div>
@@ -53,7 +55,7 @@
 </div>
 
 <!--green-->
-<div class="panel" data-color="blue2">
+<div class="panel" data-color="blue2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
   <span><br><br><br><br><br></span>
   <section>
     <h2 id="apps">Applications built with my <span style="color:#27ff27">Team</span></h2>
@@ -69,7 +71,7 @@
 </div>
 
 <!--blue-->
-<div class="panel" data-color="blue1">
+<div class="panel" data-color="blue1" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
   <span><br><br><br><br><br></span>
   <section>
     <h2 id="data-science">Exploring <span style="color:#27ffff">Data Science</span></h2>
@@ -87,6 +89,8 @@
   <script src="header.js"></script>
   <script src="webp.js"></script>
   <script src="body.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
