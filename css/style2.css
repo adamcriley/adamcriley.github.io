@@ -193,12 +193,12 @@ section:hover p3 {
   transition:opacity 0.5s;
 }
 
-section p2:hover p4 {
+section:hover p4 {
   opacity:80%;
   transition:opacity .5s;
 }
 
-section p2:hover p5 {
+section:hover p5 {
   opacity:60%;
   transition:opacity 1s;
 }
