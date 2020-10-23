@@ -37,7 +37,7 @@ function changeAngle() {
 
 setInterval(changeAngle, 100);
 
-$('a').hover(
+$('li.menu').hover(
   function(){ $(this).addClass('name') },
   function(){ $(this).removeClass('name') }
 )
