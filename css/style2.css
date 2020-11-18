@@ -32,12 +32,12 @@ header {
 }
 
 .books {
-  background: url("books.webp") no-repeat center center;
-  background-position: -25px 0;
-  background-size: 120% cover;
+  background: url("bridge.webp") no-repeat center center;
+  background-position: center top;
+  background-size: 110%;
   height: 100vh;
-  -webkit-animation: slide 20s linear infinite;
-          animation: slide 20s linear infinite;
+  -webkit-animation: slide 30s linear forwards;
+          animation: slide 30s linear forwards;
 }
 
 .headline:after {
@@ -319,25 +319,23 @@ section:hover p5 {
 
 @-webkit-keyframes slide {
   0% {
-    background-position: -25px 0;
-  }
-  50% {
-    background-position: 0px 0;
+
+    background-size: 110%;
   }
   100% {
-    background-position: -25px 0;
+
+    background-size: 120%;
   }
 }
 
 @keyframes slide {
   0% {
-    background-position: -25px 0;
-  }
-  50% {
-    background-position: 0px 0;
+
+    background-size: 110;
   }
   100% {
-    background-position: -25px 0;
+
+    background-size: 120%;
   }
 }
 
