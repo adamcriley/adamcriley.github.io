@@ -143,6 +143,8 @@ section {
 section h2 {
   color: #D1D2CD;
   text-align: left;
+  font-size: 3.5em;
+  line-height: .5em;
 }
 
 section h2::before { 
