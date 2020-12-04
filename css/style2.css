@@ -215,7 +215,7 @@ section:hover p5 {
   height: 216px;
   width: 216px;
   float: left;
-  background-image: url("me_cyan.webp");
+  background-image: url("me.webp");
   background-repeat: no-repeat;
   background-position: left;
   transition: background-image .2s;
@@ -226,8 +226,8 @@ section:hover p5 {
 .leftpic:hover {
   background-image: url("me.webp");
   transition: background-image .2s;
+  border: 1px solid #D1D2CD;
   transition: box-shadow .2s;
-  border: 1px solid #0E1B27;
   box-shadow:  5px 5px 5px #002b3e, 
                -5px -5px 5px #002b3e,
                -5px 5px 5px #002b3e,
