@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #555;
+}
+
+#header {
+	background: #222;
+	color:#ddd;
+    height:7vh;
+    width: 100vw;
+    text-align:Left;
+    font-size: 4vh;
+    box-sizing: border-box;
+    Padding-top: 1.5vh;
+    Padding-bottom: 1.5vh;
+    Padding-left: 3.5vw;
+}
+
+#content {
+    float:right;
+    color:#ddd;
+	width: 64vw;
+    height: 88vh;
+    text-align:center;
+    box-sizing: border-box;
+    Padding: 10vh;
+}
+
+#graphic {
+	float:left;
+	width: 34vw;
+    height: 88vh;
+    background: url("https://adamcriley.github.io/SVguy_layers.svg") no-repeat center center;
+    background-size: 30vw 80vh;
+}
+
+#footer {
+	clear:both;
+	background: #222;
+	color:#ddd;
+    height:5vh;
+    width: 100vw;
+    text-align:center;
+    box-sizing: border-box;
+    Padding: 1.5vh;
+}
+
+/* Jeb base for content block */
+button.buttonsearch:hover {
+	background-color: #ddd;
+}
+
+input[type=submit] {
+	background-color: rgb(111,200,151);
+	color: #555;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+	font-size: 16px;
+    border-radius: 16px;
+    visibility: hidden;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(111,200,151);
+	color: green;
+    transition-duration: 0.2s;
+    visibility: hidden;
+}
+
+#searchbar {
+	width: 100%;
+	border: 0px;
+	font-size: 16px;
+    outline: none;
+    background: #ddd;
+}
+
+#searchbartoponly {
+	width: 85%;
+	border: 2px;
+	border-color: #222;
+	border-style: solid;
+	border-radius: 16px 16px 16px 16px;
+	padding: 8px 8px 8px 8px;
+	float: left;
+	font-size: 16px;
+	background-color: #ddd;
+	z-index: 2;
+}
+
+.searchform {
+	position: relative;
+	top: 25vh;
+}
+
+.verticalcenter {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-40%,-50%);
+	transform: translate(-40%,-50%);
+}
+
+#searchbartoponly:hover {
+border: 2.5px solid #222;
+box-shadow:  8px 8px 8px #444, 
+             -8px -8px 8px #444,
+             -8px 8px 8px #444,
+             8px -8px 8px #444;
+}

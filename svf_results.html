@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+  <title>Sweater Vest Forecast</title>
+  <link rel="stylesheet" href="css/svf_results.css">
+</head>
+
+<body>
+
+<div id="header">
+	<p>Sweater Vest Forecast</p>
+</div>
+	
+<div id="content">
+	<div class = "searchform" id="searchformdiv">
+		<form action = "/weather" method = "post">
+				<div id="searchbartoponly">
+					<input type = "text" name = "zip" placeholder="Search by City or Zip Code" id="searchbar" autocomplete="off" onkeyup=populateSearch()>
+				</div>
+				<div id="searchbarbottom">
+					<table id="searchtable">
+						<tr>
+							<td class="noborder"></td>
+						</tr>
+					</table>
+				</div>
+		</form>
+	</div>
+</div>
+	
+<div id="graphic">
+    <img src="https://adamcriley.github.io/SVguy_layers_snow.svg" />
+</div>
+	
+<div id="footer">
+	<p>&#169 2020 - Jeb Lockwood & Adam Riley</p>
+</div>
+
+<script src = "{{url_for('static', filename='js/searchautocomplete.js')}}"></script>
+
+<script>
+var input = document.getElementById("myInput");
+
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("searchformright").click();
+    }
+});
+</script>
+
+</body>
+
+</html>
