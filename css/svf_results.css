@@ -4,6 +4,13 @@
     margin: 0;
 }
 
+:root{
+    --forcast-main-text: "Today is a sweater vest day!";
+    --forcast-detail-text: "A slight chance of snow before noon, then a chance of snow showers between noon and 5pm. Cloudy. High near 20, with temperatures falling to around 15 in the afternoon. West wind 5 to 10 mph. Chance of precipitation is 20%.";
+    --forcast-main-svg: url(https://adamcriley.github.io/SVguy_layers.svg);
+    --forcast-detail-svg: url(https://adamcriley.github.io/SV_snow.svg);
+}
+
 body {
     background: #555;
 }
@@ -35,8 +42,25 @@ body {
 	float:left;
 	width: 34vw;
     height: 88vh;
-    background: url("https://adamcriley.github.io/SVguy_layers.svg") no-repeat center center;
-    background-size: 30vw 80vh;
+    background: var(--forcast-main-svg) no-repeat center bottom;
+    background-size: 28vw 64vh;
+}
+
+.weather{
+    float:center;
+	width: 34vw;
+    height: 88vh;
+    content: var(--forcast-detail-svg);
+}
+
+.forecast_main::before {
+    width: 85%;
+    content: var(--forcast-main-text);
+}
+
+.forecast_detail::before {
+    width: 85%;
+    content: var(--forcast-detail-text);
 }
 
 #footer {
