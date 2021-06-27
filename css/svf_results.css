@@ -8,7 +8,7 @@
     --forcast-main-text: "Today is a sweater vest day!";
     --forcast-detail-text: "A slight chance of snow before noon, then a chance of snow showers between noon and 5pm. Cloudy. High near 20, with temperatures falling to around 15 in the afternoon. West wind 5 to 10 mph. Chance of precipitation is 20%.";
     --forcast-main-svg: url(https://adamcriley.github.io/SVguy_layers.svg);
-    --forcast-detail-svg: url(https://adamcriley.github.io/SV_snow.svg);
+    --forcast-detail-svg: url(https://adamcriley.github.io/SV_sunny.svg);
 }
 
 body {
