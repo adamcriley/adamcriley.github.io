@@ -75,13 +75,13 @@ header {
 }
 
 .name {
-  background: -webkit-linear-gradient(0deg, #27ff27, #27ffff);  
+  background: -webkit-linear-gradient(0deg, #27ff27, #27ffff, #fbff2b);  
   background-size: 200% auto;
   color: #D1D2CD;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient 30s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 nav {
@@ -261,12 +261,12 @@ section:hover p5 {
   --hcolorglow: #27ffff;
 }
 .color-blue2 {
-  background-color: #0e2727;
+  background-color: #113d04;
   --hcolorglow: #27ff27;
 }
 .color-blue3 {
-  background-color: #4b4b4b;
-  --hcolorglow: #272727;
+  background-color: #4e4e4e;
+  --hcolorglow: #fbff2b;
 }
 
 .arroww {
