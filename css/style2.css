@@ -238,6 +238,7 @@ section:hover p5 {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  padding-top: 2px;
   border: 1px solid #D1D2CD;
   border-radius: 20px;
 }
