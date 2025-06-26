@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Library - Interactive Book Review Widget</title>
+    <meta name="description" content="Explore my personal book collection and ask questions about my reading recommendations">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="widget-container">
+        <div class="widget-header">
+            <h2>Library Assistant</h2>
+            <p>browse Adam's books and ask questions about them</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="chat-section">
+                <div id="chatHistory" class="chat-history">
+                    <div class="message assistant-message">
+                        <div class="message-content">
+                            Hello! I'm here to help you explore my book collection. You can ask me about any book, request recommendations, or discuss themes and topics from my library.
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Ask me about any book in my library..." />
+                    <button id="sendMessage" class="btn btn-secondary">Send</button>
+                </div>
+                
+                <!-- Suggested questions for better UX -->
+                <div class="suggested-questions">
+                    <p><strong>Try asking:</strong></p>
+                    <div class="suggestion-buttons">
+                        <button class="suggestion-btn" onclick="bookWidget.askSuggestion('What are your top-rated books?')">Top-rated books</button>
+                        <button class="suggestion-btn" onclick="bookWidget.askSuggestion('Recommend me a fiction book')">Fiction recommendations</button>
+                        <button class="suggestion-btn" onclick="bookWidget.askSuggestion('What did you read recently?')">Recent reads</button>
+                        <button class="suggestion-btn" onclick="bookWidget.askSuggestion('How many books do you have?')">Library stats</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="library-section">
+                <div class="library-controls">
+                    <div class="library-stats" id="libraryStats">
+                        <!-- Library statistics will be shown here -->
+                    </div>
+                </div>
+                <div id="libraryGrid" class="library-grid">
+                    <!-- Books will be loaded here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <p>Processing your request...</p>
+        </div>
+    </div>
+    
+    <!-- Load configuration, book data, then the main script -->
+    <script src="config.js"></script>
+    <script src="books-data.js"></script>
+    <script src="script-github-pages.js"></script>
+</body>
+</html>
